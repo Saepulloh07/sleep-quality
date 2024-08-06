@@ -1,0 +1,9 @@
+{
+  "sleep_data": {
+    "timestamp": {
+      "snore_level": 70,
+      "motion_level": 1.2,
+      "triggers": 3
+    }
+  }
+}

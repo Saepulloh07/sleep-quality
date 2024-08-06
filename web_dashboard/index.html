@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sleep Quality Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <h1>Sleep Quality Dashboard</h1>
+  <canvas id="sleepChart"></canvas>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAzoPD014f2Y9BYmwPg77NjiArKRngVd_k",
+      authDomain: "sleepqualitymonitoring.firebaseapp.com",
+      databaseURL: "https://sleepqualitymonitoring-default-rtdb.firebaseio.com",
+      projectId: "sleepqualitymonitoring",
+      storageBucket: "sleepqualitymonitoring.appspot.com",
+      messagingSenderId: "515467105716",
+      appId: "1:515467105716:web:a11491f22183f7da0b4ee1",
+      measurementId: "G-RXRSYZSN4J"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</html>
